@@ -1,0 +1,94 @@
+/* ===============================
+   CONFIGURACIÓN GENERAL
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+/* ===============================
+   SECCIÓN PRINCIPAL
+================================= */
+.principal {
+    background-image: url('fondoincaico.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* ===============================
+   IMÁGENES LATERALES
+================================= */
+.imagen-izquierda {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 220px;
+}
+
+.imagen-derecha {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 230px;
+}
+
+/* ===============================
+   TÍTULO CENTRAL
+================================= */
+.titulo {
+    position: relative;
+    top: 35%;
+    text-align: center;
+    transform: translateY(-25%);
+}
+
+.linea1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.linea2 {
+    display: block;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #f7c224;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+}
+
+/* ===============================
+   ENLACES INFERIORES
+================================= */
+.enlaces {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.enlaces a {
+    background-color: rgba(241, 141, 27, 0.8);
+    color: #3a241f;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.enlaces a:hover {
+    background-color: rgb(250, 92, 0);
+    color: #000;
+    transform: scale(1.1);
+}

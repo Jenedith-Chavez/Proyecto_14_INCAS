@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inca Ninan Cuyuchi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background: url('fondodelinca.jpg') no-repeat center center/cover;
+            color: #fff;
+            font-family: 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        header h1 {
+            color: #ffeb3b;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .imagen {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 380px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(138, 132, 132, 0.4);
+        }
+
+        .reseña {
+            flex: 1 1 450px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .reseña p {
+            font-size: 1.2em;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        .boton-inicio {
+            bottom: 70px;
+            left: 60px;
+            text-align: center;
+            padding: 20px 0 30px 0;
+            background-color: rgba(255, 235, 59, 0.9);
+            color: #4e342e;
+            text-decoration: none;
+            padding: 12px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 20%;
+            margin-left: 40%;
+        }
+         .boton-inicio:hover {
+            background-color: #ffe082;
+            transform: scale(1.1);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen img {
+                width: 250px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .reseña {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ninan Cuyuchi</h1>
+    </header>
+
+    <main>
+        <div class="imagen">
+            <img src="ninancuyuchi.png" alt="Ninan Cuyuchi">
+        </div>
+
+        <div class="reseña">
+            <p>
+        Hijo preferido del Inca Huayna Cápac. Desde joven fue educado para gobernar, recibiendo una formación completa en política, religión, astronomía, leyes y estrategia militar, pues su padre veía en él al heredero ideal para mantener la grandeza del Tahuantinsuyo.
+        Cuando Huayna Cápac enfermó a causa de una epidemia traída desde el norte (probablemente viruela), decidió nombrar a Ninan Cuyuchi como su sucesor. Sin embargo, el destino fue trágico: poco después, Ninan contrajo la misma enfermedad y murió antes de ser oficialmente coronado.
+        Su muerte provocó una grave crisis de sucesión. No se sabía con certeza si Huayna Cápac había alcanzado a nombrar a otro heredero antes de morir.
+        
+        </div>
+    </main>
+
+<a href="./index.html" class="boton-inicio">⬅ Volver al inicio</a>
+</body>
+</html>

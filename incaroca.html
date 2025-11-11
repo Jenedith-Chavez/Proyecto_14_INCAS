@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inca Roca</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background: url('fondodelinca.jpg') no-repeat center center/cover;
+            color: #fff;
+            font-family: 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        header h1 {
+            color: #ffeb3b;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .imagen {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 268px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(138, 132, 132, 0.4);
+        }
+
+        .reseña {
+            flex: 1 1 450px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .reseña p {
+            font-size: 1.2em;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        .boton-inicio {
+            bottom: 70px;
+            left: 60px;
+            text-align: center;
+            padding: 20px 0 30px 0;
+            background-color: rgba(255, 235, 59, 0.9);
+            color: #4e342e;
+            text-decoration: none;
+            padding: 12px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 20%;
+            margin-left: 40%;
+        }
+         .boton-inicio:hover {
+            background-color: #ffe082;
+            transform: scale(1.1);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen img {
+                width: 250px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .reseña {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Inca Roca</h1>
+    </header>
+
+    <main>
+        <div class="imagen">
+            <img src="incaroca.png" alt="Inca Roca">
+        </div>
+
+        <div class="reseña">
+            <p>
+        Sexto Inca y fundador de la dinastía Hanan Cusco, que representaba la nobleza de la parte alta del Cusco. Fue un reformador en todos los aspectos: político, social y educativo.
+        Creó una escuela para los hijos de los nobles (Yachayhuasi), donde se enseñaban leyes, religión, historia, matemáticas y astronomía. Promovió el aprendizaje del quechua como lengua oficial.
+        Ordenó la construcción de canales y acueductos, que mejoraron la agricultura y el abastecimiento de agua. Se le atribuye la expansión urbana del Cusco y la construcción de palacios y templos.
+        Fue respetado como un gobernante sabio y paternal, que buscó fortalecer la estructura del Estado y formar líderes capaces para el futuro.
+           
+        </div>
+    </main>
+
+<a href="./index.html" class="boton-inicio">⬅ Volver al inicio</a>
+</body>
+</html>

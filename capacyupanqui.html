@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inca Cápac Yupanqui</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background: url('fondodelinca.jpg') no-repeat center center/cover;
+            color: #fff;
+            font-family: 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        header h1 {
+            color: #ffeb3b;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .imagen {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(138, 132, 132, 0.4);
+        }
+
+        .reseña {
+            flex: 1 1 450px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .reseña p {
+            font-size: 1.2em;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        .boton-inicio {
+            bottom: 70px;
+            left: 60px;
+            text-align: center;
+            padding: 20px 0 30px 0;
+            background-color: rgba(255, 235, 59, 0.9);
+            color: #4e342e;
+            text-decoration: none;
+            padding: 12px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 20%;
+            margin-left: 40%;
+        }
+         .boton-inicio:hover {
+            background-color: #ffe082;
+            transform: scale(1.1);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen img {
+                width: 250px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .reseña {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cápac Yupanqui</h1>
+    </header>
+
+    <main>
+        <div class="imagen">
+            <img src="capacyupanqui.png" alt="Cápac Yupanqui">
+        </div>
+
+        <div class="reseña">
+            <p>
+        Quinto Inca, hermano de Mayta Cápac. Fue un gobernante sabio, explorador y diplomático. Continuó las campañas de expansión hacia el norte y la costa peruana, llegando hasta Chincha y Nazca, donde estableció relaciones comerciales con los pueblos costeños.
+        Promovió el intercambio de productos entre la sierra y la costa, favoreciendo el desarrollo del trueque y la integración cultural.
+        También se interesó por la astronomía y la observación del cielo, que utilizó para organizar los calendarios agrícolas. Su muerte fue misteriosa: algunos cronistas afirman que fue asesinado por sus enemigos durante una expedición.
+        Pese a ello, su gobierno se recuerda como una etapa de paz y progreso material.
+           
+        </div>
+    </main>
+<a href="./index.html" class="boton-inicio">⬅ Volver al inicio</a>
+</body>
+</html>

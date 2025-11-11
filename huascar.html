@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inca Huáscar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background: url('fondodelinca.jpg') no-repeat center center/cover;
+            color: #fff;
+            font-family: 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        header h1 {
+            color: #ffeb3b;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .imagen {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(138, 132, 132, 0.4);
+        }
+
+        .reseña {
+            flex: 1 1 450px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .reseña p {
+            font-size: 1.2em;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen img {
+                width: 250px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .reseña {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+        .boton-inicio {
+            bottom: 70px;
+            left: 60px;
+            text-align: center;
+            padding: 20px 0 30px 0;
+            background-color: rgba(255, 235, 59, 0.9);
+            color: #4e342e;
+            text-decoration: none;
+            padding: 12px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 20%;
+            margin-left: 40%;
+        }
+         .boton-inicio:hover {
+            background-color: #ffe082;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Huáscar</h1>
+    </header>
+
+    <main>
+        <div class="imagen">
+            <img src="huascar.png" alt="Huáscar">
+        </div>
+
+        <div class="reseña">
+            <p>
+        Fue uno de los hijos de Huayna Cápac y Rahua Ocllo, una princesa del linaje cusqueño. Al morir su padre, fue reconocido por los nobles del Cusco como legítimo soberano, ya que representaba la autoridad tradicional y la continuidad de la capital imperial.
+        Durante su reinado, Huáscar buscó reafirmar la centralización del poder en el Cusco, pero su carácter autoritario y desconfianza hacia los generales quiteños provocaron descontento. Por otro lado, su medio hermano Atahualpa, quien se encontraba en Quito con el ejército del norte, fue proclamado Inca por sus seguidores.
+           
+        </div>
+    </main>
+<a href="./index.html" class="boton-inicio">⬅ Volver al inicio</a>
+</body>
+
+</html>
